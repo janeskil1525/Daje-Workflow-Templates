@@ -7,6 +7,12 @@ Daje::Workflow::Templates - It's a template loader
 
     use Daje::Workflow::Templates;
 
+    my $templates = Daje::Workflow::Templates->new(
+        data_sections => $data_sections,
+        source        => $source,
+        error         => $error,
+    )->load_templates();
+
 # DESCRIPTION
 
 Daje::Workflow::Templates ...
